@@ -1,17 +1,7 @@
 import pandas as pd
 pd.set_option('display.max_columns', 999)
 pd.set_option('display.max_rows', 999)
-import matplotlib.pyplot as plt
-%matplotlib inline
-import statsmodels.api as sm
-import scipy.stats as stats
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.externals.six import StringIO
-from IPython.display import Image
-from sklearn.tree import export_graphviz
-import pydotplus
-from sklearn.metrics import mean_squared_error
+
 
 
 data_all = pd.read_csv('data.csv')
@@ -28,6 +18,9 @@ data = data.rename(columns={"Winner": "winner", "Referee": "referee"})
 data.winner.unique()
 data = data[~data.winner.str.contains('Draw')]
 data
+data.isnull().sum()
+
+
 data.winner.unique()
 
 
@@ -44,5 +37,5 @@ data_small = data[['R_fighter', 'B_fighter', 'winner', 'weight_class', 'no_of_ro
 
 data_small
 
-
+data_small.isnull().sum()
 data_small.to_csv('data_small.csv')
