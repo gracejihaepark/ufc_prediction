@@ -55,13 +55,16 @@ red_data.describe()
 
 blue_data.describe()
 
+
 plt.figure(figsize=(12,5))
 ax = sns.countplot(x='R_age', data=red_data)
+ax.set_title('Age of Winners in Red Corner')
+ax.set_xlabel('Age')
 
 plt.figure(figsize=(12,5))
 ax = sns.countplot(x='B_age', data=blue_data)
-
-
+ax.set_title('Age of Winners in Blue Corner')
+ax.set_xlabel('Age')
 
 corr = data.loc[:, data.dtypes == 'float64'].corr()
 ax = sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns, annot=True)
