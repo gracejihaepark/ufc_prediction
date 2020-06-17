@@ -14,8 +14,24 @@ Machine learning algorithms to predict the winners of UFC fights
 ## Exploratory Data Analysis
 - There was a much higher percentage of winners coming from the red corner
   - Realized this was because the red corner was usually for the fighter thought to win, and the blue corner was usually the underdog of the fight
-![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-01-31%20at%2010.56.21%20AM.png?raw=true) ![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-01-31%20at%2010.56.32%20AM.png?raw=true)
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.21.00%20AM.png?raw=true)
 
-- The heights, reaches, and age of fighters seem to benefit the blue corner fighters more though
-  - Since the blue corner is the underdog of the fight, they are most likely newer to UFC, which in turn can make them younger, and although heights and reaches are better, they probably don't have the experience yet compared to seasoned fighters in the red corner
-![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-01-31%20at%2012.02.09%20PM.png?raw=true) ![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-01-31%20at%2012.03.14%20PM.png?raw=true) ![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-01-31%20at%2012.03.24%20PM.png?raw=true)
+- The height, reach, and age of fighters seem to benefit the blue corner fighters more though
+  - Since the blue corner is the underdog of the fight, they are most likely newer to UFC, which in turn can make them younger, and although height and reach are better, they probably don't have the experience yet compared to seasoned fighters in the red corner
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.21.12%20AM.png?raw=true)
+
+- The height, reach, and age of just the winners are pretty similar for both corners, and the peaks of these curves are more defined than compared with all fighers in the UFC
+![alt text]()
+
+## Model
+- Ran Random Forest, Logistic Regression, and XGBoost, running gridsearch for all three models to find the best parameters
+- All three models were similar, being off by .01 between models
+![alt text]()
+
+## Conclusions
+- XGBoost was the best model for predicting UFC fight winners
+- Accuracy was overall not very high, but UFC fights have many uncontrollable factors as well as unpredictability in “underdog” wins
+
+## Future Work
+- Would like to dive into winner and loser attributes more
+- Is there home court (country) advantage?
