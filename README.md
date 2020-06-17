@@ -21,12 +21,12 @@ Machine learning algorithms to predict the winners of UFC fights
 ![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.21.12%20AM.png?raw=true)
 
 - The height, reach, and age of just the winners are pretty similar for both corners, and the peaks of these curves are more defined than compared with all fighers in the UFC
-![alt text]()
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.24.31%20AM.png?raw=true)
 
 ## Model
 - Ran Random Forest, Logistic Regression, and XGBoost, running gridsearch for all three models to find the best parameters
 - All three models were similar, being off by .01 between models
-![alt text]()
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.30.22%20AM.png?raw=true)
 
 ## Conclusions
 - XGBoost was the best model for predicting UFC fight winners
