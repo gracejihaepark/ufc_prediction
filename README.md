@@ -7,7 +7,7 @@ Machine learning algorithms to predict the winners of UFC fights
   - Random Forest, Logistic Regression, XGBoost
 
 ## Data
-- Dataset from Kaggle
+- [Dataset from Kaggle](https://www.kaggle.com/rajeevw/ufcdata)
   - Eliminated all features that were related to strikes attempted and landed to predict the winner before the fight begins
   - Fill in NaNs with medians of column
 
