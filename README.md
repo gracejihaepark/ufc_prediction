@@ -14,19 +14,19 @@ Machine learning algorithms to predict the winners of UFC fights
 ## Exploratory Data Analysis
 - There was a much higher percentage of winners coming from the red corner
   - Realized this was because the red corner was usually for the fighter thought to win, and the blue corner was usually the underdog of the fight
-![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.21.00%20AM.png?raw=true)
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/images/winner%20by%20corner%20colors.png?raw=true)
 
 - The height, reach, and age of fighters seem to benefit the blue corner fighters more though
   - Since the blue corner is the underdog of the fight, they are most likely newer to UFC, which in turn can make them younger, and although height and reach are better, they probably don't have the experience yet compared to seasoned fighters in the red corner
-![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.21.12%20AM.png?raw=true)
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/images/attributes%20of%20fighers%20by%20corner%20colors.png?raw=true)
 
 - The height, reach, and age of just the winners are pretty similar for both corners, and the peaks of these curves are more defined than compared with all fighers in the UFC
-![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.24.31%20AM.png?raw=true)
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/images/attributes%20of%20winners%20by%20corner%20colors.png?raw=true)
 
 ## Model
 - Ran Random Forest, Logistic Regression, and XGBoost, running gridsearch for all three models to find the best parameters
 - All three models were similar, being off by .01 between models
-![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/readme%20images/Screen%20Shot%202020-06-17%20at%203.30.22%20AM.png?raw=true)
+![alt text](https://github.com/gracejihaepark/ufc_prediction/blob/master/images/model.png?raw=true)
 
 ## Conclusions
 - XGBoost was the best model for predicting UFC fight winners
